@@ -15,6 +15,8 @@ namespace Final_Project.Entity
         public long Stock { get; set; }
         public double SalePrice { get; set; }
         public int UserId { get; set; }
+        public virtual User User { get; set; } = null!;
+        public virtual ICollection<SoldProduct> SoldProducts { get; set; }
 
         public Product(int id, string name, string description, double cost, long stock, double salePrice, int userId)
         {

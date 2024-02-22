@@ -12,6 +12,8 @@ namespace Final_Project.Entity
         public int ProductId { get; set; }
         public int SaleId { get; set; }
         public long Stock { get; set; }
+        public virtual Product Product { get; set; } = null!;
+        public virtual Sale Sale { get; set; } = null!;
 
         public SoldProduct(int id, int productId, int saleId, long stock)
         {

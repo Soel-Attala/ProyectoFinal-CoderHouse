@@ -14,6 +14,8 @@ namespace Final_Project.Entity
         public string Username { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
+        public virtual ICollection<Sale> Sales { get; set; }
 
         public User(int id, string firstName, string lastName, string username, string password, string email)
         {

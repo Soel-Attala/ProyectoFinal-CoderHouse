@@ -28,3 +28,5 @@ C:\Users\Usuario\Desktop\Nueva carpeta\Final-Project.Data\obj\Debug\net6.0\Final
 C:\Users\Usuario\Desktop\Nueva carpeta\Final-Project.Data\obj\Debug\net6.0\refint\Final-Project.Data.dll
 C:\Users\Usuario\Desktop\Nueva carpeta\Final-Project.Data\obj\Debug\net6.0\Final-Project.Data.pdb
 C:\Users\Usuario\Desktop\Nueva carpeta\Final-Project.Data\obj\Debug\net6.0\ref\Final-Project.Data.dll
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Final-Project.Data\bin\Debug\net6.0\Final-Project.Data.runtimeconfig.json
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Final-Project.Data\obj\Debug\net6.0\Final-Project.Data.genruntimeconfig.cache

@@ -199,8 +199,9 @@
                     int obtainedId = Convert.ToInt32(reader["id"]);
                     int saleId = Convert.ToInt32(reader["saleId"]);
                     string comments = reader.GetString(2);
+                    int userId = Convert.ToInt32(reader["userId"]);
 
-                    Sale sale = new Sale(obtainedId, saleId, comments);
+                    Sale sale = new Sale(obtainedId, saleId, comments, userId);
 
                     return sale;
                 }
