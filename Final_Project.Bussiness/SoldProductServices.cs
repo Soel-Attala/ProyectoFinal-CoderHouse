@@ -1,4 +1,5 @@
 ﻿using Final_Project.Data;
+using Final_Project.Data.Repositories;
 using Final_Project.Entity;
 using System;
 using System.Collections.Generic;
@@ -8,21 +9,41 @@ using System.Threading.Tasks;
 
 namespace Final_Project.Bussiness
 {
-    public static class SoldProductService
+    public class SoldProductService : ISoldProductService
     {
-        public static List<SoldProduct> GetAllSoldProducts()
+        private readonly SoldProductRepository _soldProductRepository;
+
+        public SoldProductService(SoldProductRepository soldProductRepository)
         {
-            DatabaseManager databaseManager = new DatabaseManager();
-            return databaseManager.GetSoldProductById();
+            _soldProductRepository = soldProductRepository;
+        }
+
+        public async Task<IEnumerable<SoldProduct>> GetAllSoldProducts()
+        {
+            return await _soldProductRepository.GetAll();
+        }
+
+        public async Task<SoldProduct> GetSoldProductById(int id)
+        {
+            return await _soldProductRepository.Get(id);
+        }
+
+        public async Task<bool> AddSoldProduct(SoldProduct soldProduct)
+        {
+            return await _soldProductRepository.Insert(soldProduct);
+        }
+
+        public async Task<bool> UpdateSoldProduct(SoldProduct soldProduct)
+        {
+            return await _soldProductRepository.Update(soldProduct);
+        }
+
+        public async Task<bool> DeleteSoldProduct(int id)
+        {
+            return await _soldProductRepository.Delete(id);
         }
     }
 
-    public interface ISoldProductService
-    {
-        Task<bool> AddSoldProduct(SoldProduct soldProduct);
-        Task<bool> UpdateSoldProduct(SoldProduct soldProduct);
-        Task<bool> DeleteSoldProduct(int id);
-        Task<SoldProduct> GetSoldProductById(int id);
-        Task<IEnumerable<SoldProduct>> GetAllSoldProducts();
-    }
+
+
 }

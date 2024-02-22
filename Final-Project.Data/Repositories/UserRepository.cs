@@ -6,14 +6,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace Final_Project.Data.Repositories
 {
     public class UserRepository : IGenericRepository<User>
     {
-        private readonly DBContext _dbContext;
+        private readonly coderhouseContext _dbContext;
 
-        public UserRepository(DBContext context)
+        public UserRepository(coderhouseContext context)
         {
             _dbContext = context;
         }
@@ -24,6 +25,10 @@ namespace Final_Project.Data.Repositories
             _dbContext.Users.Remove(model);
             await _dbContext.SaveChangesAsync();
             return true;
+        }
+        public async Task<User> GetByName(string userName)
+        {
+            return await _dbContext.Users.FirstOrDefaultAsync(u => u.FirstName == userName);
         }
 
         public async Task<User> Get(int id)

@@ -10,9 +10,9 @@ namespace Final_Project.Data.Repositories
 {
     public class SoldProductRepository : IGenericRepository<SoldProduct>
     {
-        private readonly DBContext _dbContext;
+        private readonly coderhouseContext _dbContext;
 
-        public SoldProductRepository(DBContext context)
+        public SoldProductRepository(coderhouseContext context)
         {
             _dbContext = context;
         }

@@ -1,5 +1,6 @@
 ﻿using Final_Project.Data;
 using Final_Project.Entity;
+using Final_Project.Data.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,22 +9,42 @@ using System.Threading.Tasks;
 
 namespace Final_Project.Bussiness
 {
-    public static class ProductService
+    public class ProductService : IProductService
     {
-        public static List<Product> GetAllProducts()
+        private readonly ProductRepository _productRepository;
+
+        public ProductService(ProductRepository productRepository)
         {
-            DatabaseManager databaseManager = new DatabaseManager();
-            return databaseManager.GetProductById();
+            _productRepository = productRepository;
         }
 
+        public async Task<IEnumerable<Product>> GetAllProducts()
+        {
+            return await _productRepository.GetAll();
+        }
+
+        public async Task<Product> GetProductById(int id)
+        {
+            return await _productRepository.Get(id);
+        }
+
+        public async Task<bool> AddProduct(Product product)
+        {
+            return await _productRepository.Insert(product);
+        }
+
+        public async Task<bool> UpdateProduct(Product product)
+        {
+            return await _productRepository.Update(product);
+        }
+
+        public async Task<bool> DeleteProduct(int id)
+        {
+            return await _productRepository.Delete(id);
+        }
     }
 
-    public interface IProductService
-    {
-        Task<bool> AddProduct(Product product);
-        Task<bool> UpdateProduct(Product product);
-        Task<bool> DeleteProduct(int id);
-        Task<Product> GetProductById(int id);
-        Task<IEnumerable<Product>> GetAllProducts();
-    }
+
 }
+
+
