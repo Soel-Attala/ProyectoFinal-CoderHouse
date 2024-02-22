@@ -16,4 +16,13 @@ namespace Final_Project.Bussiness
             return databaseManager.GetSoldProductById();
         }
     }
+
+    public interface ISoldProductService
+    {
+        Task<bool> AddSoldProduct(SoldProduct soldProduct);
+        Task<bool> UpdateSoldProduct(SoldProduct soldProduct);
+        Task<bool> DeleteSoldProduct(int id);
+        Task<SoldProduct> GetSoldProductById(int id);
+        Task<IEnumerable<SoldProduct>> GetAllSoldProducts();
+    }
 }

@@ -11,6 +11,16 @@ namespace Final_Project.Bussiness
             return databaseManager.GetUserById();
         }
 
+        public interface IUserService
+        {
+            Task<bool> AddUser(User user);
+            Task<bool> UpdateUser(User user);
+            Task<bool> DeleteUser(int id);
+            Task<User> GetUserById(int id);
+            Task<IEnumerable<User>> GetAllUsers();
+            Task<User> GetUserByName(string userName);
+        }
+
 
     }
 }

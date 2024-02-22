@@ -17,4 +17,13 @@ namespace Final_Project.Bussiness
         }
 
     }
+
+    public interface IProductService
+    {
+        Task<bool> AddProduct(Product product);
+        Task<bool> UpdateProduct(Product product);
+        Task<bool> DeleteProduct(int id);
+        Task<Product> GetProductById(int id);
+        Task<IEnumerable<Product>> GetAllProducts();
+    }
 }
