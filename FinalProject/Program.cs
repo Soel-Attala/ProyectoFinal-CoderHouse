@@ -1,6 +1,6 @@
 using Entities.Database;
-using FinalProject.Front.Services;
 using Microsoft.EntityFrameworkCore;
+using Business.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<UserServices>();
+builder.Services.AddScoped<ProductServices>();
 
 
 builder.Services.AddDbContext<CoderContext>(options =>
