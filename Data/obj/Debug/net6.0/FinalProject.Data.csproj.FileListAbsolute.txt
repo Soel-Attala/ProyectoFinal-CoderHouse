@@ -1,0 +1,15 @@
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Data\bin\Debug\net6.0\FinalProject.Data.deps.json
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Data\bin\Debug\net6.0\FinalProject.Data.dll
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Data\bin\Debug\net6.0\FinalProject.Data.pdb
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Data\bin\Debug\net6.0\FinalProject.Entities.dll
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Data\bin\Debug\net6.0\FinalProject.Entities.pdb
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Data\obj\Debug\net6.0\FinalProject.Data.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Data\obj\Debug\net6.0\FinalProject.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Data\obj\Debug\net6.0\FinalProject.Data.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Data\obj\Debug\net6.0\FinalProject.Data.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Data\obj\Debug\net6.0\FinalProject.Data.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Data\obj\Debug\net6.0\FinalProject.Data.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Data\obj\Debug\net6.0\FinalProject.Data.dll
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Data\obj\Debug\net6.0\refint\FinalProject.Data.dll
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Data\obj\Debug\net6.0\FinalProject.Data.pdb
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Data\obj\Debug\net6.0\ref\FinalProject.Data.dll

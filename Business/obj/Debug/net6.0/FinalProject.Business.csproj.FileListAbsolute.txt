@@ -1,0 +1,17 @@
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Business\bin\Debug\net6.0\FinalProject.Business.deps.json
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Business\bin\Debug\net6.0\FinalProject.Business.dll
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Business\bin\Debug\net6.0\FinalProject.Business.pdb
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Business\bin\Debug\net6.0\FinalProject.Data.dll
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Business\bin\Debug\net6.0\FinalProject.Entities.dll
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Business\bin\Debug\net6.0\FinalProject.Data.pdb
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Business\bin\Debug\net6.0\FinalProject.Entities.pdb
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Business\obj\Debug\net6.0\FinalProject.Business.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Business\obj\Debug\net6.0\FinalProject.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Business\obj\Debug\net6.0\FinalProject.Business.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Business\obj\Debug\net6.0\FinalProject.Business.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Business\obj\Debug\net6.0\FinalProject.Business.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Business\obj\Debug\net6.0\FinalProject.Business.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Business\obj\Debug\net6.0\FinalProject.Business.dll
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Business\obj\Debug\net6.0\refint\FinalProject.Business.dll
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Business\obj\Debug\net6.0\FinalProject.Business.pdb
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Business\obj\Debug\net6.0\ref\FinalProject.Business.dll

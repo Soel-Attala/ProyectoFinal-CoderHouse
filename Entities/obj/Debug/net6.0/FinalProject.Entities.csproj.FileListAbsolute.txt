@@ -1,0 +1,14 @@
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Entities\bin\Debug\net6.0\FinalProject.Entities.deps.json
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Entities\bin\Debug\net6.0\FinalProject.Entities.runtimeconfig.json
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Entities\bin\Debug\net6.0\FinalProject.Entities.dll
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Entities\bin\Debug\net6.0\FinalProject.Entities.pdb
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Entities\obj\Debug\net6.0\FinalProject.Entities.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Entities\obj\Debug\net6.0\FinalProject.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Entities\obj\Debug\net6.0\FinalProject.Entities.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Entities\obj\Debug\net6.0\FinalProject.Entities.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Entities\obj\Debug\net6.0\FinalProject.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Entities\obj\Debug\net6.0\FinalProject.Entities.dll
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Entities\obj\Debug\net6.0\refint\FinalProject.Entities.dll
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Entities\obj\Debug\net6.0\FinalProject.Entities.pdb
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Entities\obj\Debug\net6.0\FinalProject.Entities.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\Entities\obj\Debug\net6.0\ref\FinalProject.Entities.dll
