@@ -21,10 +21,10 @@ namespace Business.Services
 
                 if (existingUser == null)
                 {
-                    return false; // User with the specified id not found
+                    return false;
                 }
 
-                // Update the properties of the existing user
+
                 existingUser.FirstName = actualUser.FirstName;
                 existingUser.LastName = actualUser.LastName;
                 existingUser.Username = actualUser.Username;
@@ -33,11 +33,11 @@ namespace Business.Services
 
                 await coderContext.SaveChangesAsync();
 
-                return true; // User updated successfully
+                return true;
             }
             catch (DbUpdateException)
             {
-                // Handle database update exception if needed
+
                 return false;
             }
         }
