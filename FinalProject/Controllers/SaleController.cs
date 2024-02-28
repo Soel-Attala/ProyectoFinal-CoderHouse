@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Entities.Models;
 using Business.Services;
+using Business.DTOs;
 using System.Threading.Tasks;
-
 
 namespace FinalProject.Front.Controllers
 {
@@ -18,9 +18,9 @@ namespace FinalProject.Front.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateSale([FromBody] Sale sale)
+        public async Task<IActionResult> CreateSale([FromBody] SaleDTO saleDTO)
         {
-            var result = await saleService.CreateSale(sale);
+            var result = await saleService.CreateSale(saleDTO);
 
             if (result)
             {

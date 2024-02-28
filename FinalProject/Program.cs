@@ -12,6 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<UserServices>();
 builder.Services.AddScoped<ProductServices>();
+builder.Services.AddScoped<SaleService>();  
 
 
 builder.Services.AddDbContext<CoderContext>(options =>
