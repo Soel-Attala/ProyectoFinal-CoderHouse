@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Entities.Models;
-using Entities.Database;
 using Business.Services;
 using Business.DTOs;
+using System.Threading.Tasks;
 
 namespace FinalProject.Front.Controllers
 {
@@ -10,25 +10,26 @@ namespace FinalProject.Front.Controllers
     [Route("api/[controller]")]
     public class UserController : Controller
     {
-
         private UserServices userServices;
 
         public UserController(UserServices userServices)
         {
             this.userServices = userServices;
         }
+
         [HttpGet]
-        public List<User> GetUsersList()
+        public IActionResult GetUsersList()
         {
-            return this.userServices.GetUsersList();
+            var usersList = this.userServices.GetUsersList();
+            return Ok(usersList);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> EditUser(int id, [FromBody] User actualUser)
+        public async Task<IActionResult> EditUser(int id, [FromBody] UserDTO updatedUserData)
         {
             if (id > 0)
             {
-                var result = await this.userServices.EditUserById(id, actualUser);
+                var result = await this.userServices.EditUserById(id, updatedUserData);
 
                 if (result)
                 {
@@ -44,3 +45,4 @@ namespace FinalProject.Front.Controllers
         }
     }
 }
+

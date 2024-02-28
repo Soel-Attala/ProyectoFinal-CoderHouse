@@ -2,18 +2,20 @@
 using Entities.Database;
 using Entities.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace Business.Services
 {
     public class UserServices
     {
         private CoderContext coderContext;
+
         public UserServices(CoderContext coderContext)
         {
             this.coderContext = coderContext;
         }
 
-        public async Task<bool> EditUserById(int id, User actualUser)
+        public async Task<bool> EditUserById(int id, UserDTO updatedUserData)
         {
             try
             {
@@ -21,23 +23,23 @@ namespace Business.Services
 
                 if (existingUser == null)
                 {
-                    return false;
+                    return false; 
                 }
 
-
-                existingUser.FirstName = actualUser.FirstName;
-                existingUser.LastName = actualUser.LastName;
-                existingUser.Username = actualUser.Username;
-                existingUser.Password = actualUser.Password;
-                existingUser.Email = actualUser.Email;
+                
+                existingUser.FirstName = updatedUserData.FirstName;
+                existingUser.LastName = updatedUserData.LastName;
+                existingUser.Username = updatedUserData.Username;
+                existingUser.Password = updatedUserData.Password;
+                existingUser.Email = updatedUserData.Email;
 
                 await coderContext.SaveChangesAsync();
 
-                return true;
+                return true; 
             }
             catch (DbUpdateException)
             {
-
+                
                 return false;
             }
         }
@@ -48,3 +50,6 @@ namespace Business.Services
         }
     }
 }
+
+
+
