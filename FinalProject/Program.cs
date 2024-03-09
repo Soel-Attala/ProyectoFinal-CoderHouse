@@ -32,7 +32,7 @@ builder.Services.AddAuthentication(options =>
 });
 
 
-// Add services to the container.
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -51,7 +51,7 @@ builder.Services.AddDbContext<CoderContext>(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

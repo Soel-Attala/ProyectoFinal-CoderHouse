@@ -1,5 +1,4 @@
-﻿// FinalProject.Front/Controllers/AuthController.cs
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Business.Services;
 using Business.DTOs;
 using System.Threading.Tasks;

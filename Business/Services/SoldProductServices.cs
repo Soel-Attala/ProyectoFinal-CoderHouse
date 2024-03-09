@@ -1,4 +1,4 @@
-﻿// Business.Services/SoldProductService.cs
+﻿
 using Business.DTOs;
 using Entities.Database;
 using Entities.Models;
