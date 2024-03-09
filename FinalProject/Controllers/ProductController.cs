@@ -13,7 +13,7 @@ namespace FinalProject.Front.Controllers
             this.productServices = productServices;
         }
 
-        [HttpPost]
+        [HttpPost("/AddProduct")]
         public IActionResult AddProduct([FromBody] ProductDTO product)
         {
             if (this.productServices.AddProducts(product))
@@ -28,7 +28,7 @@ namespace FinalProject.Front.Controllers
 
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("{id}/UpadateProduct")]
         public ActionResult UpdateProductById(int id, ProductDTO productDTO)
         {
             if (id > 0)
@@ -42,7 +42,14 @@ namespace FinalProject.Front.Controllers
             return base.Conflict(new { message = "product could not be updated" });
         }
 
-        [HttpDelete("{id}")]
+        [HttpGet("/ProductList")]
+        public IActionResult GetProductList()
+        {
+            var productList = this.productServices.GetProductList();
+            return Ok(productList);
+        }
+
+        [HttpDelete("/DeleteProduct/{Id}")]
         public IActionResult DeleteProductById(int id)
         {
             if (id > 0)

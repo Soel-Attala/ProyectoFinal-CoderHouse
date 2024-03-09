@@ -54,6 +54,11 @@ namespace Business.Services
             return false;
         }
 
+        public List<Product> GetProductList()
+        {
+            return this.coderContext.Products.ToList();
+        }
+
 
     }
 }

@@ -70,3 +70,5 @@ C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\FinalProject\obj
 C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\FinalProject\obj\Debug\net6.0\FinalProject.Front.pdb
 C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\FinalProject\obj\Debug\net6.0\FinalProject.Front.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\FinalProject\obj\Debug\net6.0\ref\FinalProject.Front.dll
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\FinalProject\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Usuario\Desktop\Programación\ProyectoFinal-CoderHouse\FinalProject\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll

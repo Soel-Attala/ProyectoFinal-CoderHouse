@@ -17,7 +17,14 @@ namespace FinalProject.Front.Controllers
             this.saleService = saleService;
         }
 
-        [HttpPost]
+        [HttpGet("/GetSales")]
+        public IActionResult GetSalesList()
+        {
+            var salesList = saleService.GetSalesList();
+            return Ok(salesList);
+        }
+
+        [HttpPost("/CreateSale")]
         public async Task<IActionResult> CreateSale([FromBody] SaleDTO saleDTO)
         {
             var result = await saleService.CreateSale(saleDTO);
@@ -31,5 +38,23 @@ namespace FinalProject.Front.Controllers
                 return BadRequest(new { message = "Failed to create sale" });
             }
         }
+
+        [HttpDelete("{id}/DeleteSale")]
+        public async Task<IActionResult> DeleteSale(int id)
+        {
+            var result = await saleService.DeleteSaleById(id);
+
+            if (result)
+            {
+                return Ok(new { message = "Sale deleted successfully" });
+            }
+            else
+            {
+                return NotFound(new { message = "Sale not found" });
+            }
+        }
+
+
+
     }
 }

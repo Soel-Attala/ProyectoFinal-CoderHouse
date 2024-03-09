@@ -15,6 +15,12 @@ namespace Business.Services
             this.coderContext = coderContext;
         }
 
+
+        public List<Sale> GetSalesList()
+        {
+            return coderContext.Sales.ToList();
+        }
+
         public async Task<bool> CreateSale(SaleDTO saleDTO)
         {
             try
@@ -42,5 +48,33 @@ namespace Business.Services
                 return false;
             }
         }
+
+
+        public async Task<bool> DeleteSaleById(int id)
+        {
+            try
+            {
+                var sale = await coderContext.Sales.FindAsync(id);
+
+                if (sale != null)
+                {
+                    coderContext.Sales.Remove(sale);
+                    await coderContext.SaveChangesAsync();
+
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (DbUpdateException)
+            {
+
+                return false;
+
+            }
+        }
     }
 }
+

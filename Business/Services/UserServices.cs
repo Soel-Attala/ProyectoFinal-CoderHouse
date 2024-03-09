@@ -15,6 +15,53 @@ namespace Business.Services
             this.coderContext = coderContext;
         }
 
+        public async Task<string> GetName(int userId)
+        {
+            try
+            {
+                var user = await coderContext.Users.FindAsync(userId);
+                return user?.FirstName;
+            }
+            catch (Exception ex)
+            {
+                return "User not found";
+            }
+
+        }
+
+        public User GetUserById(int id)
+        {
+            return coderContext.Users.Find(id);
+        }
+
+        public async Task<User> CreateUser(UserDTO userDTO)
+        {
+            try
+            {
+                var user = new User
+                {
+                    FirstName = userDTO.FirstName,
+                    LastName = userDTO.LastName,
+                    Username = userDTO.Username,
+                    Password = userDTO.Password,
+                    Email = userDTO.Email
+
+                };
+
+                coderContext.Users.Add(user);
+                await coderContext.SaveChangesAsync();
+
+                return user;
+            }
+            catch (DbUpdateException)
+            {
+
+                return null;
+            }
+        }
+
+
+
         public async Task<bool> EditUserById(int id, UserDTO updatedUserData)
         {
             try
@@ -23,10 +70,10 @@ namespace Business.Services
 
                 if (existingUser == null)
                 {
-                    return false; 
+                    return false;
                 }
 
-                
+
                 existingUser.FirstName = updatedUserData.FirstName;
                 existingUser.LastName = updatedUserData.LastName;
                 existingUser.Username = updatedUserData.Username;
@@ -35,11 +82,11 @@ namespace Business.Services
 
                 await coderContext.SaveChangesAsync();
 
-                return true; 
+                return true;
             }
             catch (DbUpdateException)
             {
-                
+
                 return false;
             }
         }
@@ -47,6 +94,19 @@ namespace Business.Services
         public List<User> GetUsersList()
         {
             return this.coderContext.Users.ToList();
+        }
+
+
+        public bool DeleteUserById(int id)
+        {
+            User? user = this.coderContext.Users.Where(user => user.Id == id).FirstOrDefault();
+            if (user != null)
+            {
+                this.coderContext.Remove(user);
+                this.coderContext.SaveChanges();
+                return true;
+            }
+            return false;
         }
     }
 }
